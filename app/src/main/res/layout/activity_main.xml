@@ -108,7 +108,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    android:indeterminateTint="@color/orange"
                     app:layout_constraintEnd_toEndOf="parent"
+                    android:indeterminateTintMode="src_in"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/banner" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -143,9 +145,11 @@
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/orange"
                     app:layout_constraintBottom_toBottomOf="@+id/categoryView"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.498"
+                    android:indeterminateTintMode="src_in"
                     app:layout_constraintStart_toStartOf="@+id/categoryView"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.496" />
@@ -196,8 +200,10 @@
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/orange"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    android:indeterminateTintMode="src_in"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/recyclerViewPopular" />
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -327,9 +333,7 @@
                         android:text="Account"
                         android:layout_marginTop="3dp"
                         android:textAlignment="center"
-                        android:textColor="@color/darkBrown"
-
-                        />
+                        android:textColor="@color/darkBrown" />
                 </LinearLayout>
 
             </LinearLayout>

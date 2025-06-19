@@ -1,11 +1,8 @@
-package com.example.coffeeapp
+package com.example.coffeeapp.activity
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.coffeeapp.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
