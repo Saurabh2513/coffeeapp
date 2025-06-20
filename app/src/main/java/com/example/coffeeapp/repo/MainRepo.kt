@@ -16,21 +16,20 @@ class MainRepo {
         val ref = firebaseDatabase.getReference("banner")
         ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val list= mutableListOf<BannerModel>()
+                val list = mutableListOf<BannerModel>()
                 for (childSnapshot in snapshot.children) {
                     val item = childSnapshot.getValue(BannerModel::class.java)
                     item?.let { list.add(it) }
                 }
-                listData.postValue(list)
+                listData.value = list
+            }
 
-            })
-        }
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
 
-                override fun onCancelled(error: DatabaseError) {
-            TODO("Not yet implemented")
-        }
-
-    })
-}
+        })
+        return listData
+    }
 
 }
